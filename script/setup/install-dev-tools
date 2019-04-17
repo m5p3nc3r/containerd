@@ -22,5 +22,5 @@ set -eu -o pipefail
 
 go get -u github.com/stevvooe/protobuild
 go get -u github.com/alecthomas/gometalinter
-gometalinter --install >/dev/null
+gometalinter --deadline=60s --install >/dev/null
 go get -u github.com/cpuguy83/go-md2man
