@@ -21,6 +21,8 @@ steps:
 #  privileged: true
 
   commands:
+    # Dump the configuration name into the log
+  - uname -a
     # TODO: Put these into a pre-built container
   - apt-get install -y btrfs-tools libnl-3-dev libnet-dev protobuf-c-compiler \
     python-minimal libcap-dev libaio-dev libprotobuf-c0-dev libprotobuf-dev \
