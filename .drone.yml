@@ -24,6 +24,7 @@ steps:
     # Dump the configuration name into the log
   - uname -a
     # TODO: Put these into a pre-built container
+  - apt-get update -y
   - apt-get install -y btrfs-tools libnl-3-dev libnet-dev protobuf-c-compiler \
     python-minimal libcap-dev libaio-dev libprotobuf-c0-dev libprotobuf-dev \
     socat libseccomp-dev
