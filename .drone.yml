@@ -49,10 +49,6 @@ steps:
   - if [ "$GOOS" = "linux" ]; then tar -C /tmp/ -zxf /tmp/criu.tar.gz ; fi
   - if [ "$GOOS" = "linux" ]; then cd /tmp/criu-3.7 && sudo make install-criu ; fi
   # TODO: All this part down to here can be put into a pre-built container - save ~5 minutes of build
-  # mkdir -p $HOME/build && cd $HOME/build#
-  # TODO: There is probably a $ENV that contains the working directory?
-  - mkdir -p /go/src/github.com/containerd/containerd/build
-  - cd /go/src/github.com/containerd/containerd/build
   # Before script section
   - git clone https://github.com/containerd/project ../project
   # Script section
