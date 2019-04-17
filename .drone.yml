@@ -56,9 +56,10 @@ steps:
   # Before script section
   - git clone https://github.com/containerd/project ../project
   # Script section
-  - DCO_VERBOSITY=-q ../project/script/validate/dco
-  - ../project/script/validate/fileheader ../project/
-  - ../project/script/validate/vendor
+  # TODO: re-add validation
+  #- DCO_VERBOSITY=-q ../project/script/validate/dco
+  #- ../project/script/validate/fileheader ../project/
+  #- ../project/script/validate/vendor
   - GOOS=linux script/setup/install-dev-tools
   - go build -i .
   - make check
