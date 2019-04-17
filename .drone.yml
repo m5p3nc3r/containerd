@@ -27,7 +27,7 @@ steps:
   - apt-get update -y
   - apt-get install -y btrfs-tools libnl-3-dev libnet-dev protobuf-c-compiler
     python-minimal libcap-dev libaio-dev libprotobuf-c0-dev libprotobuf-dev
-    socat libseccomp-dev sudo
+    socat libseccomp-dev sudo unzip
     # - protobuf-compiler
 
   - sudo PATH=$PATH GOPATH=$GOPATH script/setup/install-protobuf
