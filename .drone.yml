@@ -1,6 +1,9 @@
 kind: pipeline
 name: arm64
 
+workspace:
+  path: src/github.com/containerd/containerd
+
 platform:
   os: linux
   arch: arm64
